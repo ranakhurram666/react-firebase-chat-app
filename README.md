@@ -1,7 +1,7 @@
 ## Installation
 
 * `https://github.com/ranakhurram666/react-firebase-chat-app.git`
-* `cd react-firebase-chat`
+* `cd react-firebase-chat-app`
 * `npm install`
 * `npm start`
 * visit http://localhost:3000/
