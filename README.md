@@ -1,6 +1,6 @@
 ## Installation
 
-* `https://github.com/ranakhurram666/react-firebase-chat.git`
+* `https://github.com/ranakhurram666/react-firebase-chat-app.git`
 * `cd react-firebase-chat`
 * `npm install`
 * `npm start`
