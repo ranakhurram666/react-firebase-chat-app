@@ -22,12 +22,15 @@ export default class Chat extends Component {
 
     messagesRef.on('value', snapshot => {
       let messagesObj = snapshot.val();
-      let messages = [];
-      Object.keys(messagesObj).forEach(key => messages.push(messagesObj[key]));
-      messages = messages.map((message) => { return {text: message.text, user: message.user, id: message.key}})
-      this.setState(prevState => ({
-        messages: messages,
-      }));
+
+      if (messagesObj) {
+        let messages = [];
+        Object.keys(messagesObj).forEach(key => messages.push(messagesObj[key]));
+        messages = messages.map((message) => { return {text: message.text, user: message.user, id: message.key}})
+        this.setState(prevState => ({
+          messages: messages,
+        }));
+      }
     });
   }
 
